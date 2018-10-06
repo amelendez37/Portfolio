@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A personal website to act as a portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start:server": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amelendez37/Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amelendez37/Portfolio/issues"
+  },
+  "homepage": "https://github.com/amelendez37/Portfolio#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.1",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "morgan": "^1.9.1",
+    "prettier": "^1.14.3"
+  }
+}
