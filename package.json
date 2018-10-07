@@ -4,7 +4,8 @@
   "description": "A personal website to act as a portfolio",
   "main": "index.js",
   "scripts": {
-    "start:server": "node index.js"
+    "start:server": "node index.js",
+    "dev": "parcel public/index.html"
   },
   "repository": {
     "type": "git",
@@ -17,13 +18,20 @@
   },
   "homepage": "https://github.com/amelendez37/Portfolio#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "parcel-bundler": "^1.10.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-router-dom": "^4.3.1",
+    "styled-components": "^3.4.9"
   },
   "devDependencies": {
     "eslint": "^5.6.1",
     "eslint-config-prettier": "^3.1.0",
     "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
     "morgan": "^1.9.1",
-    "prettier": "^1.14.3"
+    "prettier": "^1.14.3",
+    "prop-types": "^15.6.2"
   }
 }
