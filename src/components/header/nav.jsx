@@ -5,9 +5,13 @@ import Button from "../misc/button.jsx";
 
 const Container = styled.div`
   display: flex;
-
   > * {
-    margin-left: 4%;
+    &:first-child {
+      margin-left: 4%;
+    }
+    &:not(:first-child) {
+      margin-left: 1%;
+    }
   }
 `;
 

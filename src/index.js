@@ -16,7 +16,7 @@ injectGlobal`
   html {
     box-sizing: border-box;
     font-size: 62.5%;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
 `;
 

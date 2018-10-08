@@ -10,15 +10,21 @@ const Container = Styled.button`
     border: 1.5px solid #fff;
     padding: 1.2rem;
     border-radius: 5px;
+    &:before {
+        content: "+ ";
+        color: #fff;
+    }
     &:hover {
         cursor: pointer;
-        border: 1.5px solid ${primaryColor};
         color: ${primaryColor};
     }
     &:focus {
         color: ${primaryColor};
         border: 1.5px solid ${primaryColor};
         outline: 0;
+        &:before {
+            color: ${primaryColor};
+        }
     }
 `;
 
