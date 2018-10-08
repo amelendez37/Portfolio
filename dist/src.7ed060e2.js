@@ -31210,8 +31210,24 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    color: #626567;\n    font-size: 1.4rem;\n    border: 1.5px solid #fff;\n    padding: 1.2rem;\n    border-radius: 5px;\n    &:hover {\n        cursor: pointer;\n        border: 1.5px solid ", ";\n        color: ", ";\n    }\n    &:focus {\n        color: ", ";\n        border: 1.5px solid ", ";\n        outline: 0;\n    }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var primaryColor = "#5DADE2";
+
+var Container = _styledComponents.default.button(_templateObject(), primaryColor, primaryColor, primaryColor, primaryColor);
+
 var Button = function Button(props) {
-  return _react.default.createElement("div", null, props.text);
+  return _react.default.createElement(Container, null, props.text);
 };
 
 Button.propTypes = {
@@ -31236,7 +31252,7 @@ var _button = _interopRequireDefault(require("../misc/button.jsx"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral([""]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n\n  > * {\n    margin-left: 4%;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -31278,7 +31294,7 @@ var _nav = _interopRequireDefault(require("./nav.jsx"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral([""]);
+  var data = _taggedTemplateLiteral(["\n  margin: 4% 0 4% 4%;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -31319,18 +31335,33 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
 var _header = _interopRequireDefault(require("./components/header/header.jsx"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import { Route } from "react-router-dom";
+function _templateObject() {
+  var data = _taggedTemplateLiteral([""]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var Container = _styledComponents.default.div(_templateObject());
+
 var App = function App() {
-  return _react.default.createElement("div", null, _react.default.createElement(_header.default, null));
+  return _react.default.createElement(Container, null, _react.default.createElement(_header.default, null));
 };
 
 var _default = App;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./components/header/header.jsx":"../src/components/header/header.jsx"}],"../src/index.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","./components/header/header.jsx":"../src/components/header/header.jsx"}],"../src/index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -31339,12 +31370,27 @@ var _reactDom = require("react-dom");
 
 var _reactRouterDom = require("react-router-dom");
 
+var _styledComponents = require("styled-components");
+
 var _app = _interopRequireDefault(require("./app.jsx"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n  *,\n  *::before,\n  *::after {\n    margin: 0;\n    padding: 0;\n  }\n\n  html {\n    box-sizing: border-box;\n    font-size: 62.5%;\n    font-family: 'Roboto', sans-serif;\n  }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+(0, _styledComponents.injectGlobal)(_templateObject());
 (0, _reactDom.render)(_react.default.createElement(_reactRouterDom.BrowserRouter, null, _react.default.createElement(_app.default, null)), document.getElementById("root"));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","./app.jsx":"../src/app.jsx"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","./app.jsx":"../src/app.jsx"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -31371,7 +31417,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59237" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63234" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

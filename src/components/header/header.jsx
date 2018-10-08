@@ -5,7 +5,9 @@ import Nav from "./nav.jsx";
 
 const Container = styled.div``;
 
-const Title = styled.h1``;
+const Title = styled.h1`
+  margin: 4% 0 4% 4%;
+`;
 
 const Header = () => (
   <Container>
