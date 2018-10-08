@@ -1,9 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import Nav from "./nav.jsx";
-
-const Container = styled.div``;
+import NavContainer from "../nav/navContainer.jsx";
 
 const Title = styled.h1`
   margin: 4% 0 4% 4%;
@@ -13,10 +11,10 @@ const Title = styled.h1`
 `;
 
 const Header = () => (
-  <Container>
+  <React.Fragment>
     <Title>Aaron Melendez</Title>
-    <Nav />
-  </Container>
+    <NavContainer />
+  </React.Fragment>
 );
 
 export default Header;
