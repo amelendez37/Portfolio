@@ -3,7 +3,13 @@ import styled from "styled-components";
 
 import Button from "../misc/button.jsx";
 
-const Container = styled.div``;
+const Container = styled.div`
+  display: flex;
+
+  > * {
+    margin-left: 4%;
+  }
+`;
 
 const Nav = () => (
   <Container>
