@@ -1,15 +1,16 @@
 import React from "react";
-// import { Route } from "react-router-dom";
-import Styled from "styled-components";
+import { Switch, Route } from "react-router-dom";
 
 import Header from "./components/header/header.jsx";
-
-const Container = Styled.div``;
+import About from "./components/about/about.jsx";
 
 const App = () => (
-  <Container>
+  <React.Fragment>
     <Header />
-  </Container>
+    <Switch>
+      <Route exact path="/" component={About} />
+    </Switch>
+  </React.Fragment>
 );
 
 export default App;
