@@ -7,6 +7,8 @@ const Container = styled.div``;
 
 const Title = styled.h1`
   margin: 4% 0 4% 4%;
+  font-size: 3rem;
+  text-transform: uppercase;
 `;
 
 const Header = () => (
