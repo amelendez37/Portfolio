@@ -1,5 +1,15 @@
 import React from "react";
 
-const About = () => <div>ABOUT</div>;
+import AboutHeading from "./about_heading/aboutHeading.jsx";
+import AboutContent from "./about_content/aboutContent.jsx";
+
+const About = () => {
+  return (
+    <React.Fragment>
+      <AboutHeading />
+      <AboutContent />
+    </React.Fragment>
+  );
+};
 
 export default About;
