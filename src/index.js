@@ -17,7 +17,7 @@ injectGlobal`
     box-sizing: border-box;
     font-size: 62.5%;
     font-family: 'Montserrat', sans-serif;
-    background-color: #FBFCFC;
+    background-color: #FDFEFE;
   }
 `;
 

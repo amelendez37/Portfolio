@@ -11,7 +11,18 @@ const NavContainer = props => {
     });
   };
 
-  return <Nav handleAboutClick={handleAboutClick} />;
+  const handleFeaturedClick = () => {
+    props.history.push({
+      pathname: "/featured"
+    });
+  };
+
+  return (
+    <Nav
+      handleAboutClick={handleAboutClick}
+      handleFeaturedClick={handleFeaturedClick}
+    />
+  );
 };
 
 NavContainer.propTypes = {

@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
+import Styled from "styled-components";
 
 import Button from "../misc/button.jsx";
 
-const Container = styled.div`
+const Container = Styled.div`
   display: flex;
   > * {
     &:first-child {
@@ -21,13 +21,16 @@ const Nav = props => (
     <div onClick={props.handleAboutClick}>
       <Button text={"About"} />
     </div>
-    <Button text={"Featured Project"} />
+    <div onClick={props.handleFeaturedClick}>
+      <Button text={"Featured Project"} />
+    </div>
     <Button text={"Contact"} />
   </Container>
 );
 
 Nav.propTypes = {
-  handleAboutClick: PropTypes.func.isRequired
+  handleAboutClick: PropTypes.func.isRequired,
+  handleFeaturedClick: PropTypes.func.isRequired
 };
 
 export default Nav;

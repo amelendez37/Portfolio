@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 // colors
 const primaryColor = "#5DADE2";
-const fillColor = "#FBFCFC";
+const fillColor = "#FDFEFE";
 
 const Container = Styled.button`
     color: #626567;
