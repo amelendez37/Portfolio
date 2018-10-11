@@ -4,7 +4,7 @@ import Styled from "styled-components";
 
 import Button from "../misc/button.jsx";
 
-const Container = Styled.div`
+const Container = Styled.nav`
   display: flex;
   > * {
     &:first-child {

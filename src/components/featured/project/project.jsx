@@ -62,7 +62,9 @@ class Project extends React.Component {
         <Title>{this.props.title}</Title>
         <Summary>{this.props.summary}</Summary>
         <Details>Tech Stack - {this.props.details}</Details>
-        <Link href={this.props.link}>{this.props.link}</Link>
+        <Link href={this.props.link} target={"_blank"}>
+          {this.props.link}
+        </Link>
         <Video innerRef={this.videoRef} src={this.props.source} autoPlay loop>
           <Fallback>Your browser does not support html5 video</Fallback>
         </Video>
