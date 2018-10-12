@@ -17,10 +17,17 @@ const NavContainer = props => {
     });
   };
 
+  const handleContactClick = () => {
+    props.history.push({
+      pathname: "/contact"
+    });
+  };
+
   return (
     <Nav
       handleAboutClick={handleAboutClick}
       handleFeaturedClick={handleFeaturedClick}
+      handleContactClick={handleContactClick}
     />
   );
 };

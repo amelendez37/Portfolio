@@ -61,7 +61,6 @@ class Project extends React.Component {
       <Container>
         <Title>{this.props.title}</Title>
         <Summary>{this.props.summary}</Summary>
-        <Details>Tech Stack - {this.props.details}</Details>
         <Link href={this.props.link} target={"_blank"}>
           {this.props.link}
         </Link>
@@ -76,7 +75,6 @@ class Project extends React.Component {
 Project.propTypes = {
   title: PropTypes.string.isRequired,
   summary: PropTypes.string.isRequired,
-  details: PropTypes.string.details,
   link: PropTypes.string.link,
   source: PropTypes.string.isRequired
 };

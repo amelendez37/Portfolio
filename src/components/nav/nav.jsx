@@ -24,13 +24,16 @@ const Nav = props => (
     <div onClick={props.handleFeaturedClick}>
       <Button text={"Featured Project"} />
     </div>
-    <Button text={"Contact"} />
+    <div onClick={props.handleContactClick}>
+      <Button text={"Contact"} />
+    </div>
   </Container>
 );
 
 Nav.propTypes = {
   handleAboutClick: PropTypes.func.isRequired,
-  handleFeaturedClick: PropTypes.func.isRequired
+  handleFeaturedClick: PropTypes.func.isRequired,
+  handleContactClick: PropTypes.func.isRequired
 };
 
 export default Nav;

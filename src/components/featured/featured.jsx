@@ -14,7 +14,6 @@ const Featured = () => {
       <Project
         title={"Task Tracker"}
         summary={"A tool that improves workflows."}
-        details={"React, React-dnd, Node, Express, MongoDB"}
         link={"https://bit.ly/2IObIKi"}
         source={TaskTrackerVid}
       />

@@ -63,7 +63,7 @@ const AboutContent = () => {
       </Container>
       <Footer>
         <FooterText>
-          Photos by Raul Varzr and Pankaj Patel on Unsplash
+          Photos by Raul Varzr, Pankaj Patel, and Benjamin Sow on Unsplash
         </FooterText>
       </Footer>
     </React.Fragment>
