@@ -24,14 +24,14 @@ const Summary = Styled.p`
 `;
 
 const Details = Styled.div`
-  width: 35%;
+  width: 40%;
   height: 14rem;
   background-color: #011118;
   margin-bottom: 4rem;
 `;
 
 const DetailsContainer = Styled.div`
-  padding: 2rem;
+  padding: 2rem 5rem;
 `;
 
 const Link = Styled.a`
