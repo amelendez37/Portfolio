@@ -4,9 +4,10 @@
   "description": "A personal website to act as a portfolio",
   "main": "index.js",
   "scripts": {
-    "start": "npm-run-all start:server build",
+    "start": "npm-run-all build:prod start:server",
     "start:server": "node index.js",
-    "build": "parcel public/index.html"
+    "build:dev": "parcel public/index.html",
+    "build:prod": "parcel build public/index.html"
   },
   "repository": {
     "type": "git",
