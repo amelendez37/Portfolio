@@ -3,16 +3,17 @@ import Styled from "styled-components";
 import PropTypes from "prop-types";
 
 const Container = Styled.div`
-  width: 82%;
+  width: 100%;
   height: 68rem;
   margin-left: 50%;
   transform: translateX(-50%);
 `;
 
 const Title = Styled.p`
+  color: #fff;
   font-size: 3rem;
   font-weight: 900;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 `;
 
 const Summary = Styled.p`
@@ -22,23 +23,27 @@ const Summary = Styled.p`
   color: #B3B6B7;
 `;
 
-const Details = Styled.p`
-  font-size: 1.2rem; 
-  margin-bottom: 1rem;
-  font-weight: 700;
-  color: #4D5656;
+const Details = Styled.div`
+  width: 35%;
+  height: 14rem;
+  background-color: #011118;
+  margin-bottom: 4rem;
+`;
+
+const DetailsContainer = Styled.div`
+  padding: 2rem;
 `;
 
 const Link = Styled.a`
   display: block;
   font-size: 1.2rem; 
   margin-bottom: 3.5rem;
-  color: #4D5656;
+  color: #ECF0F1;
 `;
 
 const Video = Styled.video`
   position: relative;
-  width: 100%;
+  width: 82%;
   left: 50%;
   transform: translateX(-50%);
 `;
@@ -59,11 +64,15 @@ class Project extends React.Component {
   render() {
     return (
       <Container>
-        <Title>{this.props.title}</Title>
-        <Summary>{this.props.summary}</Summary>
-        <Link href={this.props.link} target={"_blank"}>
-          {this.props.link}
-        </Link>
+        <Details>
+          <DetailsContainer>
+            <Title>{this.props.title}</Title>
+            <Summary>{this.props.summary}</Summary>
+            <Link href={this.props.link} target={"_blank"}>
+              {this.props.link}
+            </Link>
+          </DetailsContainer>
+        </Details>
         <Video innerRef={this.videoRef} src={this.props.source} autoPlay loop>
           <Fallback>Your browser does not support html5 video</Fallback>
         </Video>
