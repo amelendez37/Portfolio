@@ -4,7 +4,7 @@ import Styled from "styled-components";
 import PhoneImg from "../../../public/images/phone.jpg";
 import Email from "../../../public/images/envelop.svg";
 import Github from "../../../public/images/github.svg";
-import Linkedin from "../../../public/images/Linkedin.svg";
+import Linkedin from "../../../public/images/linkedin.svg";
 
 const Container = Styled.div`
   position: relative;
