@@ -39,6 +39,7 @@ const Link = Styled.a`
   font-size: 1.2rem; 
   margin-bottom: 3.5rem;
   color: #ECF0F1;
+  width: 35%;
 `;
 
 const Video = Styled.video`
