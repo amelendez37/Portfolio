@@ -1,5 +1,5 @@
 .vscode
 .cache
 .DS_Store
-dist/
+public/
 node_modules/
