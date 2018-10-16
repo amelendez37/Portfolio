@@ -5,7 +5,7 @@ import NavContainer from "../nav/navContainer.jsx";
 
 const Title = styled.h1`
   margin: 4% 0 4% 4%;
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-weight: bold;
   text-transform: uppercase;
 `;

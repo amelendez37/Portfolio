@@ -10,7 +10,7 @@ const Card = Styled.div`
 `;
 
 const TextRightTitle = Styled.p`
-  font-size: 3rem;
+  font-size: 3.75rem;
   color: ${textColor};
   padding: 3rem 0 6rem 0;
 `;
@@ -27,7 +27,7 @@ const Skills = Styled.div`
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-gap: 1.5rem 1rem;
   justify-items: center;
-  padding: 1rem 3rem;
+  padding: 3rem 3rem .5rem 3rem;
   height: 66%;
 `;
 
@@ -38,7 +38,7 @@ const Skill = Styled.div`
   margin: .5rem 0;
   width: 95%;
   height: 100%;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: ${textColor};
   background-color: ${props => props.color};
 `;

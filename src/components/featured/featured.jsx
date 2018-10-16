@@ -6,6 +6,7 @@ import TaskTrackerVid from "../../../public/images/tasktracker_example.mov";
 
 const Container = Styled.div`
   margin: 7rem 0;
+  padding-bottom: 12%;
 `;
 
 const Featured = () => {

@@ -11,21 +11,21 @@ const Container = Styled.div`
 
 const Title = Styled.p`
   color: #fff;
-  font-size: 3rem;
+  font-size: 3.8rem;
   font-weight: 900;
   padding-bottom: 1rem;
 `;
 
 const Summary = Styled.p`
-  font-size: 1.8rem;
+  font-size: 2.3rem;
   font-weight: 700;
   margin-bottom: 1rem;
   color: #B3B6B7;
 `;
 
 const Details = Styled.div`
-  width: 40%;
-  height: 14rem;
+  width: 35%;
+  height: 16rem;
   background-color: #011118;
   margin-bottom: 4rem;
 `;
@@ -36,7 +36,7 @@ const DetailsContainer = Styled.div`
 
 const Link = Styled.a`
   display: block;
-  font-size: 1.2rem; 
+  font-size: 1.5rem; 
   margin-bottom: 3.5rem;
   color: #ECF0F1;
   width: 35%;

@@ -12,7 +12,7 @@ const Card = Styled.div`
 const Profile = Styled.img`
   margin-top: 4rem;
   border-radius: 50%;
-  width: 8.5rem;
+  width: 11rem;
 `;
 
 const TextContainerLeft = Styled.div`
@@ -24,11 +24,11 @@ const TextContainerLeft = Styled.div`
 const Text = Styled.p`
   width: 70%;
   margin: 0 0 0 50%;
-  padding: 6rem 0 3rem 0;
+  padding: 7rem 0 3rem 0;
   transform: translateX(-50%);
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #626567;
-  line-height: 3rem;
+  line-height: 4rem;
 `;
 
 const CardLeft = () => {

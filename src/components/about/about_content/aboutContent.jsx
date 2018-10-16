@@ -7,20 +7,20 @@ import RightCard from "./card_right/cardRight.jsx";
 const Cards = Styled.div`
   display: flex;
   justify-content: space-evenly;
-  margin: 10% 0;
+  margin: 24rem 0 16rem 0;
 `;
 
 const Footer = Styled.div`
   background-color: #839192;
   color: #F0F3F4;
   width: 100vw;
-  height: 4rem;
+  height: 4.5rem;
   text-align: center;
 `;
 
 const FooterText = Styled.p`
   position: relative;
-  font-size: 1rem;
+  font-size: 1.2rem;
   top: 50%;
   transform: translateY(-50%);
 `;

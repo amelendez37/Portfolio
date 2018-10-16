@@ -19,23 +19,23 @@ const Image = Styled.img`
 
 const Title = Styled.p`
   position: absolute;
-  top: 10rem;
-  left: 10rem;
-  font-size: 7rem;
+  top: 13rem;
+  left: 11rem;
+  font-size: 9rem;
   font-weight: 700;
   color: #fff;
 `;
 
 const Contacts = Styled.div`
   position: absolute;
-  top: 23rem;
-  left: 12rem;
+  top: 30rem;
+  left: 14rem;
   list-style: none;
 `;
 
 const ContactItem = Styled.a`
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   margin-left: 2rem;
 `;
 
@@ -47,6 +47,7 @@ const SubContainer = Styled.div`
 
 const Icon = Styled.img`
   filter: invert(1);
+  width: 4rem;
 `;
 
 const Contact = () => {
