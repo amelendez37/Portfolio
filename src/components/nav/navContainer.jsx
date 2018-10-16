@@ -4,33 +4,48 @@ import { withRouter } from "react-router-dom";
 
 import Nav from "./nav.jsx";
 
-const NavContainer = props => {
-  const handleAboutClick = () => {
-    props.history.push({
+class NavContainer extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { selectedBtn: "about" }; // about, featured, contact
+
+    this.handleAboutClick = this.handleAboutClick.bind(this);
+    this.handleContactClick = this.handleContactClick.bind(this);
+    this.handleFeaturedClick = this.handleFeaturedClick.bind(this);
+  }
+
+  handleAboutClick() {
+    this.setState({ selectedBtn: "about" });
+    this.props.history.push({
       pathname: "/"
     });
-  };
+  }
 
-  const handleFeaturedClick = () => {
-    props.history.push({
+  handleFeaturedClick() {
+    this.setState({ selectedBtn: "featured" });
+    this.props.history.push({
       pathname: "/featured"
     });
-  };
+  }
 
-  const handleContactClick = () => {
-    props.history.push({
+  handleContactClick() {
+    this.setState({ selectedBtn: "contact" });
+    this.props.history.push({
       pathname: "/contact"
     });
-  };
+  }
 
-  return (
-    <Nav
-      handleAboutClick={handleAboutClick}
-      handleFeaturedClick={handleFeaturedClick}
-      handleContactClick={handleContactClick}
-    />
-  );
-};
+  render() {
+    return (
+      <Nav
+        handleAboutClick={this.handleAboutClick}
+        handleFeaturedClick={this.handleFeaturedClick}
+        handleContactClick={this.handleContactClick}
+        selectedBtn={this.state.selectedBtn}
+      />
+    );
+  }
+}
 
 NavContainer.propTypes = {
   history: PropTypes.object.isRequired

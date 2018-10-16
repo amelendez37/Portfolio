@@ -19,13 +19,16 @@ const Container = Styled.nav`
 const Nav = props => (
   <Container>
     <div onClick={props.handleAboutClick}>
-      <Button text={"About"} />
+      <Button text={"About"} selected={props.selectedBtn === "about"} />
     </div>
     <div onClick={props.handleFeaturedClick}>
-      <Button text={"Featured Project"} />
+      <Button
+        text={"Featured Project"}
+        selected={props.selectedBtn === "featured"}
+      />
     </div>
     <div onClick={props.handleContactClick}>
-      <Button text={"Contact"} />
+      <Button text={"Contact"} selected={props.selectedBtn === "contact"} />
     </div>
   </Container>
 );
@@ -33,7 +36,8 @@ const Nav = props => (
 Nav.propTypes = {
   handleAboutClick: PropTypes.func.isRequired,
   handleFeaturedClick: PropTypes.func.isRequired,
-  handleContactClick: PropTypes.func.isRequired
+  handleContactClick: PropTypes.func.isRequired,
+  selectedBtn: PropTypes.string.isRequired
 };
 
 export default Nav;
