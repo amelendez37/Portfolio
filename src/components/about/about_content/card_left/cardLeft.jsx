@@ -7,6 +7,15 @@ const Card = Styled.div`
   width: 37%;
   box-shadow: 0 4px 12px 0 rgba(0,0,0,.25);
   text-align: center;
+
+  @media only screen and (max-width: 55rem) {
+    margin-bottom: 3.5rem;
+    width: 55%;
+  }
+
+  @media only screen and (max-width: 44rem) {
+    width: 65%;
+  }
 `;
 
 const Profile = Styled.img`
@@ -29,6 +38,22 @@ const Text = Styled.p`
   font-size: 2rem;
   color: #626567;
   line-height: 4rem;
+
+  @media only screen and (max-width: 79rem) {
+    font-size: 1.5rem;
+  }
+
+  @media only screen and (max-width: 63rem) {
+    font-size: 1.2rem;
+  }
+
+  @media only screen and (max-width: 27rem) {
+    font-size: 1rem;
+  }
+
+  @media only screen and (max-width: 20rem) {
+    font-size: .8rem;
+  }
 `;
 
 const CardLeft = () => {

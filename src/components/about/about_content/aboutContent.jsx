@@ -8,6 +8,15 @@ const Cards = Styled.div`
   display: flex;
   justify-content: space-evenly;
   margin: 24rem 0 16rem 0;
+
+  @media only screen and (max-width: 55rem) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media only screen and (max-width: 68.75rem) {
+    margin-top: 18rem;
+  }
 `;
 
 const Footer = Styled.div`

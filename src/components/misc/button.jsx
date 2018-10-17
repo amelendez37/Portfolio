@@ -16,7 +16,6 @@ const Container = Styled.button`
     border: ${props =>
       props.selected ? `1.5px solid ${primaryColor}` : fillColor};
     &:before {
-        content: "+ ";
         color: ${props => (props.selected ? primaryColor : fillColor)};
     }
     &:hover {

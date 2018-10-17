@@ -15,11 +15,32 @@ const LeftPanel = Styled.img`
   width: 50%;
   height: 48rem;
   filter: brightness(70%);
+
+  @media only screen and (max-width: 68.75rem) {
+    height: 42rem;
+  }
+
+  @media only screen and (max-width: 54rem) {
+    width: 100%;
+    height: 38rem;
+  }
+
+  @media only screen and (max-width: 40rem) {
+    height: 33rem;
+  }
 `;
 
 const RightPanel = Styled.img`
   width: 50%;
   height: 48rem;
+
+  @media only screen and (max-width: 68.75rem) {
+    height: 42rem;
+  }
+
+  @media only screen and (max-width: 54rem) {
+    display: none;
+  }
 `;
 
 const ImageText = Styled.p`
@@ -33,6 +54,19 @@ const ImageText = Styled.p`
   text-align: center;
   font-size: 2.2rem;
   font-weight: 400;
+
+  @media only screen and (max-width: 68.75rem) {
+    transform: translate(-50%, -50%);
+  }
+
+  @media only screen and (max-width: 54rem) {
+    left: 50%;
+    padding: 8% 12%;
+  }
+
+  @media only screen and (max-width: 40rem) {
+    transform: translate(-50%, -75%);
+  }
 `;
 
 const AboutHeading = () => {

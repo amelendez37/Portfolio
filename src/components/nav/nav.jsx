@@ -14,6 +14,14 @@ const Container = Styled.nav`
       margin-left: 1%;
     }
   }
+
+  @media only screen and (max-width: 27rem) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
 `;
 
 const Nav = props => (

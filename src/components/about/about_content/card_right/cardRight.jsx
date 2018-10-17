@@ -7,12 +7,25 @@ const Card = Styled.div`
   width: 37%;
   box-shadow: 0 4px 12px 0 rgba(0,0,0,.25);
   text-align: center;
+
+  @media only screen and (max-width: 55rem) {
+    width: 55%;
+    height: 60rem;
+  }
+
+  @media only screen and (max-width: 44rem) {
+    width: 65%;
+  }
 `;
 
 const TextRightTitle = Styled.p`
   font-size: 3.75rem;
   color: ${textColor};
   padding: 3rem 0 6rem 0;
+
+  @media only screen and (max-width: 63rem) {
+    font-size: 3.35rem;
+  }
 `;
 
 const TextContainerRight = Styled.div`
@@ -41,6 +54,26 @@ const Skill = Styled.div`
   font-size: 2.5rem;
   color: ${textColor};
   background-color: ${props => props.color};
+
+  @media only screen and (max-width: 63rem) {
+    font-size: 2.2rem;
+  }
+
+  @media only screen and (max-width: 44rem) {
+    font-size: 1.8rem;
+  }
+
+  @media only screen and (max-width: 27rem) {
+    font-size: 1.3rem;
+  }
+
+  @media only screen and (max-width: 27rem) {
+    font-size: 1.3rem;
+  }
+
+  @media only screen and (max-width: 20rem) {
+    font-size: 1rem;
+  }
 `;
 
 const CardRight = () => {
