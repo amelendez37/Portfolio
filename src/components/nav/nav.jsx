@@ -6,7 +6,6 @@ import Button from "../misc/button.jsx";
 
 const Container = Styled.nav`
   display: flex;
-  margin: 6rem 0;
   margin: 6rem 0 6rem 4%;
 
   @media only screen and (max-width: 27rem) {
