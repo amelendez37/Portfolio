@@ -8,7 +8,7 @@ import Linkedin from "../../../public/images/linkedin.svg";
 
 const Container = Styled.div`
   position: relative;
-  margin-top: 5rem;
+  margin-top: 6rem;
 `;
 
 const Image = Styled.img`
@@ -19,35 +19,81 @@ const Image = Styled.img`
 
 const Title = Styled.p`
   position: absolute;
-  top: 13rem;
-  left: 11rem;
+  top: 13%;
+  left: 10%;
   font-size: 9rem;
   font-weight: 700;
   color: #fff;
+
+  @media only screen and (max-width: 72rem) {
+    font-size: 7rem;
+  }
+
+  @media only screen and (max-width: 53rem) {
+    font-size: 6rem;
+  }
+
+  @media only screen and (max-width: 37rem) {
+    font-size: 4.5rem;
+  }
 `;
 
 const Contacts = Styled.div`
   position: absolute;
-  top: 30rem;
-  left: 14rem;
+  top: 30%;
+  left: 12%;
   list-style: none;
+
+  @media only screen and (max-width: 40.5rem) {
+    position: static;
+    margin: 8rem 0 10rem 50%;
+    transform: translateX(-50%);
+  }
 `;
 
 const ContactItem = Styled.a`
   color: #fff;
   font-size: 1.9rem;
   margin-left: 2rem;
+
+  @media only screen and (max-width: 72rem) {
+    font-size: 1.5rem;
+  }
+
+  @media only screen and (max-width: 53rem) {
+    font-size: 1.3rem;
+  }
+
+  @media only screen and (max-width: 40.5rem) {
+    color: black;
+  }
 `;
 
-const SubContainer = Styled.div`
+const ContactContainer = Styled.div`
   display: flex;
   align-items: center;
   margin: 4rem 0;
+
+  @media only screen and (max-width: 44rem) {
+    margin: 4rem 0;
+  }
 `;
 
 const Icon = Styled.img`
   filter: invert(1);
   width: 4rem;
+
+  @media only screen and (max-width: 72rem) {
+    width: 3.5rem;
+  }
+
+  @media only screen and (max-width: 53rem) {
+    width: 3rem;
+  }
+
+  @media only screen and (max-width: 40.5rem) {
+    filter: invert(.5);
+  }
 `;
 
 const Contact = () => {
@@ -56,11 +102,11 @@ const Contact = () => {
       <Image src={PhoneImg} />
       <Title>Get in touch.</Title>
       <Contacts>
-        <SubContainer>
+        <ContactContainer>
           <Icon src={Email} alt={"Email icon"} />
           <ContactItem>aaronmelendez37@gmail.com</ContactItem>
-        </SubContainer>
-        <SubContainer>
+        </ContactContainer>
+        <ContactContainer>
           <Icon src={Linkedin} alt={"LinkedIn icon"} />
           <ContactItem
             href="https://www.linkedin.com/in/aaron-melendez/"
@@ -68,13 +114,13 @@ const Contact = () => {
           >
             https://www.linkedin.com/in/aaron-melendez/
           </ContactItem>
-        </SubContainer>
-        <SubContainer>
+        </ContactContainer>
+        <ContactContainer>
           <Icon src={Github} alt={"Github icon"} />
           <ContactItem href="https://github.com/amelendez37" target="_blank">
             https://github.com/amelendez37
           </ContactItem>
-        </SubContainer>
+        </ContactContainer>
       </Contacts>
     </Container>
   );

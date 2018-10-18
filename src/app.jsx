@@ -5,6 +5,7 @@ import Header from "./components/header/header.jsx";
 import About from "./components/about/about.jsx";
 import Featured from "./components/featured/featured.jsx";
 import Contact from "./components/contact/contact.jsx";
+import Footer from "./components/footer/footer.jsx";
 
 const App = () => (
   <React.Fragment>
@@ -14,6 +15,7 @@ const App = () => (
       <Route exact path="/featured" component={Featured} />
       <Route exact path="/contact" component={Contact} />
     </Switch>
+    <Footer />
   </React.Fragment>
 );
 
