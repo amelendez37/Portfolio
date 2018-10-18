@@ -7,7 +7,6 @@ import TabletopImg from "../../../../public/images/tabletop.jpg";
 const Container = Styled.div`
   position: relative;
   display: flex;
-  margin-top: 6rem;
   height: 38rem;
 `;
 

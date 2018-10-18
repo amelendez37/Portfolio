@@ -6,17 +6,10 @@ import Button from "../misc/button.jsx";
 
 const Container = Styled.nav`
   display: flex;
-  > * {
-    &:first-child {
-      margin-left: 4%;
-    }
-    &:not(:first-child) {
-      margin-left: 1%;
-    }
-  }
+  margin: 6rem 0;
+  margin: 6rem 0 6rem 4%;
 
   @media only screen and (max-width: 27rem) {
-    display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 50%;

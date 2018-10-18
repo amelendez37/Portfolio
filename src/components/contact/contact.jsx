@@ -8,7 +8,7 @@ import Linkedin from "../../../public/images/linkedin.svg";
 
 const Container = Styled.div`
   position: relative;
-  margin-top: 6rem;
+  xmargin-top: 6rem;
 `;
 
 const Image = Styled.img`
@@ -90,7 +90,7 @@ const ContactContainer = Styled.div`
 const Icon = Styled.img`
   filter: invert(1);
   xwidth: 4rem;
-  width: 8%;
+  width: 10%;
 
   x@media only screen and (max-width: 72rem) {
     width: 3.5rem;
