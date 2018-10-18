@@ -7,6 +7,18 @@ const Container = Styled.div`
   height: 68rem;
   margin-left: 50%;
   transform: translateX(-50%);
+
+  @media only screen and (max-width: 64rem) {
+    height: 45rem;
+  }
+
+  @media only screen and (max-width: 48rem) {
+    height: 35rem;
+  }
+
+  @media only screen and (max-width: 27rem) {
+    height: 15rem;
+  }
 `;
 
 const Title = Styled.p`

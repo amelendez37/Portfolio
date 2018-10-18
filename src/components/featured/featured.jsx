@@ -5,9 +5,8 @@ import Project from "./project/project.jsx";
 import TaskTrackerVid from "../../../public/images/tasktracker_example.mov";
 
 const Container = Styled.div`
-  margin: 7rem 0;
-  padding-bottom: 12%;
-`;
+  margin-bottom: 30rem;
+ `;
 
 const Featured = () => {
   return (

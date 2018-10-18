@@ -8,7 +8,6 @@ import Linkedin from "../../../public/images/linkedin.svg";
 
 const Container = Styled.div`
   position: relative;
-  xmargin-top: 6rem;
 `;
 
 const Image = Styled.img`

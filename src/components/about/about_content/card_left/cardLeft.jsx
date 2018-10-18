@@ -33,7 +33,7 @@ const TextContainerLeft = Styled.div`
 const Text = Styled.p`
   width: 70%;
   margin: 0 0 0 50%;
-  padding: 7rem 0 3rem 0;
+  padding: 9rem 0 3rem 0;
   transform: translateX(-50%);
   font-size: 2rem;
   color: #626567;
@@ -44,15 +44,17 @@ const Text = Styled.p`
   }
 
   @media only screen and (max-width: 63rem) {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
   }
 
   @media only screen and (max-width: 27rem) {
-    font-size: 1rem;
+    line-height: 3rem;
   }
 
   @media only screen and (max-width: 20rem) {
-    font-size: .8rem;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
   }
 `;
 
@@ -62,10 +64,11 @@ const CardLeft = () => {
       <Profile src={ProfileImg} alt="Picture of me" />
       <TextContainerLeft>
         <Text>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industrys standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only.
+          Thanks for taking the time to look around! I&#39;m a full stack
+          developer with experience developing dynamic and responsive user
+          interfaces as well as restful APIs. I&#39;m currently most interested
+          in the world of web development and furthering my knowledge of the
+          field.
         </Text>
       </TextContainerLeft>
     </Card>
