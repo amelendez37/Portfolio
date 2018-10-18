@@ -48,6 +48,10 @@ const Contacts = Styled.div`
     margin: 8rem 0 10rem 50%;
     transform: translateX(-50%);
   }
+
+  @media only screen and (max-width: 20rem) {
+    margin-left: 45%;
+  }
 `;
 
 const ContactItem = Styled.a`
@@ -88,22 +92,10 @@ const ContactContainer = Styled.div`
 
 const Icon = Styled.img`
   filter: invert(1);
-  xwidth: 4rem;
   width: 10%;
-
-  x@media only screen and (max-width: 72rem) {
-    width: 3.5rem;
-  }
-
-  x@media only screen and (max-width: 53rem) {
-    width: 3rem;
-  }
 
   @media only screen and (max-width: 40.5rem) {
     filter: invert(.5);
-  }
-  x@media only screen and (max-width: 34.5rem) {
-    width: 2.5rem;
   }
 
 `;
