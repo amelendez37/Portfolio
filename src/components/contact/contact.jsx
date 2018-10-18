@@ -48,10 +48,6 @@ const Contacts = Styled.div`
     margin: 8rem 0 10rem 50%;
     transform: translateX(-50%);
   }
-
-  @media only screen and (max-width: 20rem) {
-    margin-left: 45%;
-  }
 `;
 
 const ContactItem = Styled.a`
@@ -76,7 +72,7 @@ const ContactItem = Styled.a`
   }
 
   @media only screen and (max-width: 26.5rem) {
-    font-size: .9rem;
+    font-size: 1.2rem;
   }
 `;
 
@@ -88,6 +84,10 @@ const ContactContainer = Styled.div`
   @media only screen and (max-width: 44rem) {
     margin: 4rem 0;
   }
+
+  @media only screen and (max-width: 20rem) {
+    flex-direction: column;
+  }
 `;
 
 const Icon = Styled.img`
@@ -98,6 +98,10 @@ const Icon = Styled.img`
     filter: invert(.5);
   }
 
+  @media only screen and (max-width: 20rem) {
+    width: 25%;
+    margin-bottom: 1.5rem;
+  }
 `;
 
 const Contact = () => {
