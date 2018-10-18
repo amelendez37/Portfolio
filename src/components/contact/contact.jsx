@@ -57,15 +57,23 @@ const ContactItem = Styled.a`
   margin-left: 2rem;
 
   @media only screen and (max-width: 72rem) {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   @media only screen and (max-width: 53rem) {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   @media only screen and (max-width: 40.5rem) {
     color: black;
+  }
+
+  @media only screen and (max-width: 34.5rem) {
+    font-size: 1.2rem;
+  }
+
+  @media only screen and (max-width: 26.5rem) {
+    font-size: .9rem;
   }
 `;
 
@@ -81,19 +89,24 @@ const ContactContainer = Styled.div`
 
 const Icon = Styled.img`
   filter: invert(1);
-  width: 4rem;
+  xwidth: 4rem;
+  width: 8%;
 
-  @media only screen and (max-width: 72rem) {
+  x@media only screen and (max-width: 72rem) {
     width: 3.5rem;
   }
 
-  @media only screen and (max-width: 53rem) {
+  x@media only screen and (max-width: 53rem) {
     width: 3rem;
   }
 
   @media only screen and (max-width: 40.5rem) {
     filter: invert(.5);
   }
+  x@media only screen and (max-width: 34.5rem) {
+    width: 2.5rem;
+  }
+
 `;
 
 const Contact = () => {
