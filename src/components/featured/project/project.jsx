@@ -8,15 +8,15 @@ const Container = Styled.div`
   margin-left: 50%;
   transform: translateX(-50%);
 
-  @media only screen and (max-width: 64rem) {
+  @media only screen and (max-width: 64em) {
     height: 45rem;
   }
 
-  @media only screen and (max-width: 48rem) {
+  @media only screen and (max-width: 48em) {
     height: 35rem;
   }
 
-  @media only screen and (max-width: 27rem) {
+  @media only screen and (max-width: 27em) {
     height: 15rem;
   }
 `;
@@ -27,15 +27,15 @@ const Title = Styled.p`
   font-weight: 900;
   padding-bottom: 1rem;
 
-  @media only screen and (max-width: 62.5rem) {
+  @media only screen and (max-width: 62.5em) {
     font-size: 2.7rem;
   }
 
-  @media only screen and (max-width: 47rem) {
+  @media only screen and (max-width: 47em) {
     font-size: 2.3rem;
   }
 
-  @media only screen and (max-width: 27rem) {
+  @media only screen and (max-width: 27em) {
     font-size: 2rem;
   }
 `;
@@ -46,15 +46,15 @@ const Summary = Styled.p`
   margin-bottom: 1rem;
   color: #B3B6B7;
 
-  @media only screen and (max-width: 62.5rem) {
+  @media only screen and (max-width: 62.5em) {
     font-size: 1.8rem;
   }
 
-  @media only screen and (max-width: 47rem) {
+  @media only screen and (max-width: 47em) {
     font-size: 1.5rem;
   }
 
-  @media only screen and (max-width: 27rem) {
+  @media only screen and (max-width: 27em) {
     font-size: 1.3rem;
   }
 `;
@@ -65,17 +65,17 @@ const Details = Styled.div`
   background-color: #011118;
   margin-bottom: 4rem;
 
-  @media only screen and (max-width: 62.5rem) {
+  @media only screen and (max-width: 62.5em) {
     height: 14rem;
     width: 40rem;
   }
 
-  @media only screen and (max-width: 47rem) {
+  @media only screen and (max-width: 47em) {
     height: 12rem;
     width: 32rem;
   }
 
-  @media only screen and (max-width: 27rem) {
+  @media only screen and (max-width: 27em) {
     height: 11rem;
     width: 100%;
   }
@@ -86,7 +86,7 @@ const DetailsContainer = Styled.div`
   flex-direction: column;
   padding: 2rem 5rem;
 
-  @media only screen and (max-width: 27rem) {
+  @media only screen and (max-width: 27em) {
     text-align: center;
   }
 `;
@@ -96,15 +96,15 @@ const Link = Styled.a`
   margin-bottom: 3.5rem;
   color: #ECF0F1;
 
-  @media only screen and (max-width: 62.5rem) {
+  @media only screen and (max-width: 62.5em) {
     font-size: 1.4rem;
   }
 
-  @media only screen and (max-width: 47rem) {
+  @media only screen and (max-width: 47em) {
     font-size: 1.2rem;
   }
 
-  @media only screen and (max-width: 27rem) {
+  @media only screen and (max-width: 27em) {
     font-size: 1rem;
   }
 `;

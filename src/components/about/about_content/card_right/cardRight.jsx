@@ -8,12 +8,12 @@ const Card = Styled.div`
   box-shadow: 0 4px 12px 0 rgba(0,0,0,.25);
   text-align: center;
 
-  @media only screen and (max-width: 55rem) {
+  @media only screen and (max-width: 55em) {
     width: 55%;
     height: 60rem;
   }
 
-  @media only screen and (max-width: 44rem) {
+  @media only screen and (max-width: 44em) {
     width: 65%;
   }
 `;
@@ -23,7 +23,7 @@ const TextRightTitle = Styled.p`
   color: ${textColor};
   padding: 3rem 0 6rem 0;
 
-  @media only screen and (max-width: 63rem) {
+  @media only screen and (max-width: 63em) {
     font-size: 3.35rem;
   }
 `;
@@ -55,23 +55,23 @@ const Skill = Styled.div`
   color: ${textColor};
   background-color: ${props => props.color};
 
-  @media only screen and (max-width: 63rem) {
+  @media only screen and (max-width: 63em) {
     font-size: 2.2rem;
   }
 
-  @media only screen and (max-width: 44rem) {
+  @media only screen and (max-width: 44em) {
     font-size: 1.8rem;
   }
 
-  @media only screen and (max-width: 27rem) {
+  @media only screen and (max-width: 27em) {
     font-size: 1.3rem;
   }
 
-  @media only screen and (max-width: 27rem) {
+  @media only screen and (max-width: 27em) {
     font-size: 1.3rem;
   }
 
-  @media only screen and (max-width: 20rem) {
+  @media only screen and (max-width: 20em) {
     font-size: 1rem;
   }
 `;

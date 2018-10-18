@@ -15,16 +15,16 @@ const LeftPanel = Styled.img`
   height: 48rem;
   filter: brightness(70%);
 
-  @media only screen and (max-width: 68.75rem) {
+  @media only screen and (max-width: 68.75em) {
     height: 42rem;
   }
 
-  @media only screen and (max-width: 54rem) {
+  @media only screen and (max-width: 54em) {
     width: 100%;
     height: 38rem;
   }
 
-  @media only screen and (max-width: 40rem) {
+  @media only screen and (max-width: 40em) {
     height: 33rem;
   }
 `;
@@ -33,11 +33,11 @@ const RightPanel = Styled.img`
   width: 50%;
   height: 48rem;
 
-  @media only screen and (max-width: 68.75rem) {
+  @media only screen and (max-width: 68.75em) {
     height: 42rem;
   }
 
-  @media only screen and (max-width: 54rem) {
+  @media only screen and (max-width: 54em) {
     display: none;
   }
 `;
@@ -54,16 +54,16 @@ const ImageText = Styled.p`
   font-size: 2.2rem;
   font-weight: 400;
 
-  @media only screen and (max-width: 68.75rem) {
+  @media only screen and (max-width: 68.75em) {
     transform: translate(-50%, -50%);
   }
 
-  @media only screen and (max-width: 54rem) {
+  @media only screen and (max-width: 54em) {
     left: 50%;
     padding: 8% 12%;
   }
 
-  @media only screen and (max-width: 40rem) {
+  @media only screen and (max-width: 40em) {
     transform: translate(-50%, -75%);
   }
 `;

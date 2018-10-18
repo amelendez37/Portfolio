@@ -11,7 +11,7 @@ const Name = Styled.div`
   text-transform: uppercase;
   margin: 4% 0 4% 4%;
 
-  @media only screen and (max-width: 27rem) {
+  @media only screen and (max-width: 27em) {
     align-items: center;
     margin-left: 50%;
     transform: translateX(-50%);

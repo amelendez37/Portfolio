@@ -8,12 +8,12 @@ const Card = Styled.div`
   box-shadow: 0 4px 12px 0 rgba(0,0,0,.25);
   text-align: center;
 
-  @media only screen and (max-width: 55rem) {
+  @media only screen and (max-width: 55em) {
     margin-bottom: 3.5rem;
     width: 55%;
   }
 
-  @media only screen and (max-width: 44rem) {
+  @media only screen and (max-width: 44em) {
     width: 65%;
   }
 `;
@@ -39,20 +39,20 @@ const Text = Styled.p`
   color: #626567;
   line-height: 4rem;
 
-  @media only screen and (max-width: 79rem) {
+  @media only screen and (max-width: 79em) {
     font-size: 1.5rem;
   }
 
-  @media only screen and (max-width: 63rem) {
+  @media only screen and (max-width: 63em) {
     font-size: 1.5rem;
     line-height: 3.5rem;
   }
 
-  @media only screen and (max-width: 27rem) {
+  @media only screen and (max-width: 27em) {
     line-height: 3rem;
   }
 
-  @media only screen and (max-width: 20rem) {
+  @media only screen and (max-width: 20em) {
     font-size: 1.3rem;
     line-height: 2.5rem;
   }

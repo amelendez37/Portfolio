@@ -9,11 +9,11 @@ const Cards = Styled.div`
   justify-content: space-evenly;
   margin: 24rem 0 16rem 0;
 
-  @media only screen and (max-width: 68.75rem) {
+  @media only screen and (max-width: 68.75em) {
     margin-top: 12rem;
   }
 
-  @media only screen and (max-width: 55rem) {
+  @media only screen and (max-width: 55em) {
     margin-top: 5rem;
     flex-direction: column;
     align-items: center;

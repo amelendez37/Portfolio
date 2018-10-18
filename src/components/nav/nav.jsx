@@ -8,7 +8,7 @@ const Container = Styled.nav`
   display: flex;
   margin: 6rem 0 6rem 4%;
 
-  @media only screen and (max-width: 27rem) {
+  @media only screen and (max-width: 27em) {
     flex-direction: column;
     align-items: center;
     margin-left: 50%;

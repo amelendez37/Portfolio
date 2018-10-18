@@ -24,15 +24,15 @@ const Title = Styled.p`
   font-weight: 700;
   color: #fff;
 
-  @media only screen and (max-width: 72rem) {
+  @media only screen and (max-width: 72em) {
     font-size: 7rem;
   }
 
-  @media only screen and (max-width: 53rem) {
+  @media only screen and (max-width: 53em) {
     font-size: 6rem;
   }
 
-  @media only screen and (max-width: 37rem) {
+  @media only screen and (max-width: 37em) {
     font-size: 4.5rem;
   }
 `;
@@ -43,7 +43,7 @@ const Contacts = Styled.div`
   left: 12%;
   list-style: none;
 
-  @media only screen and (max-width: 40.5rem) {
+  @media only screen and (max-width: 40.5em) {
     position: static;
     margin: 8rem 0 10rem 50%;
     transform: translateX(-50%);
@@ -56,19 +56,19 @@ const ContactItem = Styled.a`
   margin-left: 2rem;
   font-weight: bold;
 
-  @media only screen and (max-width: 72rem) {
+  @media only screen and (max-width: 72em) {
     font-size: 1.8rem;
   }
 
-  @media only screen and (max-width: 53rem) {
+  @media only screen and (max-width: 53em) {
     font-size: 1.5rem;
   }
 
-  @media only screen and (max-width: 40.5rem) {
+  @media only screen and (max-width: 40.5em) {
     color: black;
   }
 
-  @media only screen and (max-width: 34.5rem) {
+  @media only screen and (max-width: 34.5em) {
     font-size: 1.2rem;
   }
 `;
@@ -78,11 +78,11 @@ const ContactContainer = Styled.div`
   align-items: center;
   margin: 4rem 0;
 
-  @media only screen and (max-width: 44rem) {
+  @media only screen and (max-width: 44em) {
     margin: 4rem 0;
   }
 
-  @media only screen and (max-width: 27rem) {
+  @media only screen and (max-width: 27em) {
     flex-direction: column;
   }
 `;
@@ -91,11 +91,11 @@ const Icon = Styled.img`
   filter: invert(1);
   width: 10%;
 
-  @media only screen and (max-width: 40.5rem) {
+  @media only screen and (max-width: 40.5em) {
     filter: invert(.5);
   }
 
-  @media only screen and (max-width: 27rem) {
+  @media only screen and (max-width: 27em) {
     width: 25%;
     margin-bottom: 2rem;
   }
