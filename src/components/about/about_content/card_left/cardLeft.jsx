@@ -10,11 +10,11 @@ const Card = Styled.div`
 
   @media only screen and (max-width: 55em) {
     margin-bottom: 3.5rem;
-    width: 55%;
+    width: 65%;
   }
 
   @media only screen and (max-width: 44em) {
-    width: 65%;
+    width: 85%;
   }
 `;
 

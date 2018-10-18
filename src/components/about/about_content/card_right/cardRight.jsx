@@ -9,12 +9,12 @@ const Card = Styled.div`
   text-align: center;
 
   @media only screen and (max-width: 55em) {
-    width: 55%;
+    width: 65%;
     height: 60rem;
   }
 
   @media only screen and (max-width: 44em) {
-    width: 65%;
+    width: 85%;
   }
 `;
 
@@ -60,19 +60,15 @@ const Skill = Styled.div`
   }
 
   @media only screen and (max-width: 44em) {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   @media only screen and (max-width: 27em) {
-    font-size: 1.3rem;
-  }
-
-  @media only screen and (max-width: 27em) {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 
   @media only screen and (max-width: 20em) {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 `;
 

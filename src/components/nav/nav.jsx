@@ -11,7 +11,7 @@ const Container = Styled.nav`
   @media only screen and (max-width: 27em) {
     flex-direction: column;
     align-items: center;
-    margin-left: 50%;
+    margin: 3rem 0 3rem 50%;
     transform: translateX(-50%);
   }
 `;
