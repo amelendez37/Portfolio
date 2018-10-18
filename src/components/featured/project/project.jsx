@@ -32,11 +32,11 @@ const Title = Styled.p`
   }
 
   @media only screen and (max-width: 47rem) {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
 
   @media only screen and (max-width: 27rem) {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
 `;
 
@@ -51,11 +51,11 @@ const Summary = Styled.p`
   }
 
   @media only screen and (max-width: 47rem) {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   @media only screen and (max-width: 27rem) {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 `;
 

@@ -54,6 +54,7 @@ const ContactItem = Styled.a`
   color: #fff;
   font-size: 1.9rem;
   margin-left: 2rem;
+  font-weight: bold;
 
   @media only screen and (max-width: 72rem) {
     font-size: 1.8rem;
@@ -70,10 +71,6 @@ const ContactItem = Styled.a`
   @media only screen and (max-width: 34.5rem) {
     font-size: 1.2rem;
   }
-
-  @media only screen and (max-width: 26.5rem) {
-    font-size: 1.2rem;
-  }
 `;
 
 const ContactContainer = Styled.div`
@@ -85,7 +82,7 @@ const ContactContainer = Styled.div`
     margin: 4rem 0;
   }
 
-  @media only screen and (max-width: 20rem) {
+  @media only screen and (max-width: 27rem) {
     flex-direction: column;
   }
 `;
@@ -98,9 +95,9 @@ const Icon = Styled.img`
     filter: invert(.5);
   }
 
-  @media only screen and (max-width: 20rem) {
+  @media only screen and (max-width: 27rem) {
     width: 25%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
   }
 `;
 
