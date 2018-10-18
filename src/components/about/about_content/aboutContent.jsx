@@ -9,13 +9,14 @@ const Cards = Styled.div`
   justify-content: space-evenly;
   margin: 24rem 0 16rem 0;
 
-  @media only screen and (max-width: 55rem) {
-    flex-direction: column;
-    align-items: center;
+  @media only screen and (max-width: 68.75rem) {
+    margin-top: 12rem;
   }
 
-  @media only screen and (max-width: 68.75rem) {
-    margin-top: 18rem;
+  @media only screen and (max-width: 55rem) {
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
   }
 `;
 

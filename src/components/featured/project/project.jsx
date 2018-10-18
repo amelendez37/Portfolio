@@ -14,6 +14,18 @@ const Title = Styled.p`
   font-size: 3.8rem;
   font-weight: 900;
   padding-bottom: 1rem;
+
+  @media only screen and (max-width: 62.5rem) {
+    font-size: 2.7rem;
+  }
+
+  @media only screen and (max-width: 47rem) {
+    font-size: 2rem;
+  }
+
+  @media only screen and (max-width: 27rem) {
+    font-size: 1.7rem;
+  }
 `;
 
 const Summary = Styled.p`
@@ -21,25 +33,68 @@ const Summary = Styled.p`
   font-weight: 700;
   margin-bottom: 1rem;
   color: #B3B6B7;
+
+  @media only screen and (max-width: 62.5rem) {
+    font-size: 1.8rem;
+  }
+
+  @media only screen and (max-width: 47rem) {
+    font-size: 1.2rem;
+  }
+
+  @media only screen and (max-width: 27rem) {
+    font-size: 1rem;
+  }
 `;
 
 const Details = Styled.div`
-  width: 35%;
+  width: 50rem;
   height: 16rem;
   background-color: #011118;
   margin-bottom: 4rem;
+
+  @media only screen and (max-width: 62.5rem) {
+    height: 14rem;
+    width: 40rem;
+  }
+
+  @media only screen and (max-width: 47rem) {
+    height: 12rem;
+    width: 32rem;
+  }
+
+  @media only screen and (max-width: 27rem) {
+    height: 11rem;
+    width: 100%;
+  }
 `;
 
 const DetailsContainer = Styled.div`
+  display: flex;
+  flex-direction: column;
   padding: 2rem 5rem;
+
+  @media only screen and (max-width: 27rem) {
+    text-align: center;
+  }
 `;
 
 const Link = Styled.a`
-  display: block;
   font-size: 1.5rem; 
   margin-bottom: 3.5rem;
   color: #ECF0F1;
-  width: 35%;
+
+  @media only screen and (max-width: 62.5rem) {
+    font-size: 1.4rem;
+  }
+
+  @media only screen and (max-width: 47rem) {
+    font-size: 1.2rem;
+  }
+
+  @media only screen and (max-width: 27rem) {
+    font-size: 1rem;
+  }
 `;
 
 const Video = Styled.video`
