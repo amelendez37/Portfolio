@@ -6,6 +6,7 @@ import RightCard from "./card_right/cardRight.jsx";
 
 const Cards = Styled.div`
   display: flex;
+  justify-content: space-around;
   justify-content: space-evenly;
   margin: 24rem 0 16rem 0;
 
