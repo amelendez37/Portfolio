@@ -36,7 +36,11 @@ const Title = Styled.p`
     font-size: 4.5rem;
   }
 
-  @media only screen and (max-width: 120em) {
+  @media only screen and (max-width: 20em) {
+    font-size: 4rem;
+  }
+
+  @media only screen and (min-width: 120em) {
     font-size: 12rem;
   }
 
@@ -80,7 +84,7 @@ const ContactItem = Styled.a`
     font-size: 1.2rem;
   }
 
-  @media only screen and (max-width: 120em) {
+  @media only screen and (min-width: 120em) {
     font-size: 2.3rem;
   }
 

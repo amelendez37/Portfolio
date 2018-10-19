@@ -85,6 +85,7 @@ const ImageText = Styled.p`
 
   @media only screen and (min-width: 120em) {
     font-size: 3.5rem;
+    padding: 5% 8%;
   }
 
   @media only screen and (min-width: 160em) {
