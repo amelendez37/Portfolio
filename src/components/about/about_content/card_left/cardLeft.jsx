@@ -61,7 +61,7 @@ const Text = Styled.p`
     line-height: 2.5rem;
   }
 
-  @media only screen and (min-width: 120em) {
+  @media only screen and (min-width: 115em) {
     font-size: 2.5rem;
     line-height: 4.5rem;
   }
