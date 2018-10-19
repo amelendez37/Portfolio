@@ -2,7 +2,7 @@ import React from "react";
 import Styled from "styled-components";
 
 import Project from "./project/project.jsx";
-import TaskTrackerVid from "../../../public/images/tasktracker_example.mov";
+import TaskTrackerVid from "../../../public/images/tasktracker_example.mp4";
 
 const Container = Styled.div`
   margin-bottom: 30rem;
