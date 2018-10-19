@@ -6,18 +6,20 @@ const Container = Styled.div`
   width: 100%;
   height: 68rem;
   margin-left: 50%;
+  xmargin-bottom: 25rem;
+  margin-bottom: 20%;
   transform: translateX(-50%);
 
   @media only screen and (max-width: 64em) {
-    height: 45rem;
+    height: 60rem;
   }
 
   @media only screen and (max-width: 48em) {
-    height: 35rem;
+    height: 45rem;
   }
 
   @media only screen and (max-width: 27em) {
-    height: 15rem;
+    height: 40rem;
   }
 
   @media only screen and (min-width: 95em) {
@@ -87,8 +89,12 @@ const Summary = Styled.p`
   }
 `;
 
-const Details = Styled.div`
-  width: 50rem;
+const DetailsContainer = Styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 5rem;
+  width: 47rem;
   height: 14rem;
   background-color: #011118;
   margin-bottom: 4rem;
@@ -104,8 +110,9 @@ const Details = Styled.div`
   }
 
   @media only screen and (max-width: 27em) {
-    height: 11rem;
-    width: 100%;
+    height: 8rem;
+    width: 77%;
+    text-align: center;
   }
 
   @media only screen and (min-width: 120em) {
@@ -119,22 +126,26 @@ const Details = Styled.div`
   }
 `;
 
-const DetailsContainer = Styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2rem 5rem;
-
-  @media only screen and (max-width: 27em) {
-    text-align: center;
-  }
-`;
-
 const Video = Styled.video`
   position: relative;
   width: 82%;
   left: 50%;
   transform: translateX(-50%);
+
+  @media only screen and (max-width: 27em) {
+    width: 95%;
+  }
+`;
+
+const Img = Styled.img`
+  position: relative;
+  width: 82%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media only screen and (max-width: 27em) {
+    width: 95%;
+  }
 `;
 
 const Fallback = Styled.p``;
@@ -147,21 +158,30 @@ class Project extends React.Component {
 
   componentDidMount() {
     const videoNode = this.videoRef.current;
-    videoNode.playbackRate = 2.5;
+    if (videoNode) {
+      videoNode.playbackRate = 2.5;
+    }
   }
 
   render() {
     return (
       <Container>
-        <Details>
-          <DetailsContainer>
-            <Title>{this.props.title}</Title>
-            <Summary>{this.props.summary}</Summary>
-          </DetailsContainer>
-        </Details>
-        <Video innerRef={this.videoRef} src={this.props.source} autoPlay loop>
-          <Fallback>Your browser does not support html5 video</Fallback>
-        </Video>
+        <DetailsContainer>
+          <Title>{this.props.title}</Title>
+          <Summary>{this.props.summary}</Summary>
+        </DetailsContainer>
+        {this.props.source.type === "video" ? (
+          <Video
+            innerRef={this.videoRef}
+            src={this.props.source.src}
+            autoPlay
+            loop
+          >
+            <Fallback>Your browser does not support html5 video</Fallback>
+          </Video>
+        ) : (
+          <Img src={this.props.source.src} />
+        )}
       </Container>
     );
   }
@@ -170,7 +190,7 @@ class Project extends React.Component {
 Project.propTypes = {
   title: PropTypes.string.isRequired,
   summary: PropTypes.string.isRequired,
-  source: PropTypes.string.isRequired
+  source: PropTypes.object.isRequired
 };
 
 export default Project;

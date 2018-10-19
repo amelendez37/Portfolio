@@ -23,7 +23,7 @@ const Nav = props => (
     </div>
     <div onClick={props.handleFeaturedClick}>
       <Button
-        text={"Featured Project"}
+        text={"Featured Projects"}
         selected={props.selectedBtn === "featured"}
       />
     </div>
