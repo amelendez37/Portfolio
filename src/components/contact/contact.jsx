@@ -98,8 +98,12 @@ const ContactContainer = Styled.div`
     flex-direction: column;
   }
 
+  @media only screen and (min-width: 120em) {
+    margin: 4rem 0 8rem 0;
+  }
+
   @media only screen and (min-width: 160em) {
-    margin: 8rem 0;
+    margin: 4rem 0 12rem 0;
   }
 `;
 

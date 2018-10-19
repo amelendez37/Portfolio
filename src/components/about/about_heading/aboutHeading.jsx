@@ -83,6 +83,10 @@ const ImageText = Styled.p`
     transform: translate(-50%, -75%);
   }
 
+  @media only screen and (min-width: 120em) {
+    font-size: 3.5rem;
+  }
+
   @media only screen and (min-width: 160em) {
     font-size: 4rem;
     transform: translate(-50%, -10%);

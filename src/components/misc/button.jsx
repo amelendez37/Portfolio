@@ -13,6 +13,7 @@ const Container = Styled.button`
     padding: 1.2rem;
     border-radius: 5px;
     outline: 0;
+    margin: 0 1.2rem;
     border: ${props =>
       props.selected ? `1.5px solid ${primaryColor}` : fillColor};
     &:before {
@@ -24,10 +25,10 @@ const Container = Styled.button`
     }
 
     @media only screen and (min-width: 120em) {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
     }
 
-    @media only screen and (min-width: 120em) {
+    @media only screen and (min-width: 160em) {
       font-size: 4rem;
       padding: 1.8rem;
     }
