@@ -22,6 +22,15 @@ const Container = Styled.button`
         cursor: pointer;
         color: ${primaryColor};
     }
+
+    @media only screen and (min-width: 120em) {
+      font-size: 2.5rem;
+    }
+
+    @media only screen and (min-width: 120em) {
+      font-size: 4rem;
+      padding: 1.8rem;
+    }
 `;
 
 const Button = props => (

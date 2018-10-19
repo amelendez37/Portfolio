@@ -7,6 +7,14 @@ const FooterContainer = Styled.div`
   width: 100vw;
   height: 4.5rem;
   text-align: center;
+
+  @media only screen and (min-width: 120em) {
+    height: 5.5rem;
+  }
+
+  @media only screen and (min-width: 120em) {
+    height: 6.5rem;
+  }
 `;
 
 const FooterText = Styled.p`
@@ -14,6 +22,14 @@ const FooterText = Styled.p`
   font-size: 1.2rem;
   top: 50%;
   transform: translateY(-50%);
+
+  @media only screen and (min-width: 120em) {
+    font-size: 1.8rem;
+  }
+
+  @media only screen and (min-width: 160em) {
+    font-size: 2.4rem;
+  }
 `;
 
 const Footer = () => {

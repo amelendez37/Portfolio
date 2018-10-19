@@ -16,6 +16,10 @@ const Card = Styled.div`
   @media only screen and (max-width: 44em) {
     width: 85%;
   }
+
+  @media only screen and (min-width: 160em) {
+    margin-top: 20rem;
+  }
 `;
 
 const TextRightTitle = Styled.p`
@@ -42,6 +46,11 @@ const Skills = Styled.div`
   justify-items: center;
   padding: 3rem 3rem .5rem 3rem;
   height: 66%;
+
+  @media only screen and (min-width: 160em) {
+    grid-gap: 2.5rem 1.5rem;
+    height: 76%;
+  }
 `;
 
 const Skill = Styled.div`
@@ -69,6 +78,14 @@ const Skill = Styled.div`
 
   @media only screen and (max-width: 20em) {
     font-size: 1.3rem;
+  }
+
+  @media only screen and (min-width: 120em) {
+    font-size: 3rem;
+  }
+
+  @media only screen and (min-width: 160em) {
+    font-size: 4.7rem;
   }
 `;
 

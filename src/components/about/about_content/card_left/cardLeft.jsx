@@ -16,6 +16,10 @@ const Card = Styled.div`
   @media only screen and (max-width: 44em) {
     width: 85%;
   }
+
+  @media only screen and (min-width: 160em) {
+    margin-top: 20rem;
+  }
 `;
 
 const Profile = Styled.img`
@@ -55,6 +59,17 @@ const Text = Styled.p`
   @media only screen and (max-width: 20em) {
     font-size: 1.3rem;
     line-height: 2.5rem;
+  }
+
+  @media only screen and (min-width: 120em) {
+    font-size: 2.5rem;
+    line-height: 4.5rem;
+  }
+
+  @media only screen and (min-width: 160em) {
+    font-size: 3.5rem;
+    line-height: 6rem;
+    padding: 12rem 0 5rem 0;
   }
 `;
 

@@ -16,6 +16,14 @@ const Name = Styled.div`
     margin-left: 50%;
     transform: translateX(-50%);
   }
+
+  @media only screen and (min-width: 120em) {
+    font-size: 3.5rem;
+  }
+
+  @media only screen and (min-width: 160em) {
+    font-size: 5rem;
+  }
 `;
 
 const Header = () => (

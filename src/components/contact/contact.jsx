@@ -35,6 +35,14 @@ const Title = Styled.p`
   @media only screen and (max-width: 37em) {
     font-size: 4.5rem;
   }
+
+  @media only screen and (max-width: 120em) {
+    font-size: 12rem;
+  }
+
+  @media only screen and (min-width: 160em) {
+    font-size: 15rem;
+  }
 `;
 
 const Contacts = Styled.div`
@@ -71,6 +79,14 @@ const ContactItem = Styled.a`
   @media only screen and (max-width: 34.5em) {
     font-size: 1.2rem;
   }
+
+  @media only screen and (max-width: 120em) {
+    font-size: 2.3rem;
+  }
+
+  @media only screen and (min-width: 160em) {
+    font-size: 3.3rem;
+  }
 `;
 
 const ContactContainer = Styled.div`
@@ -78,12 +94,12 @@ const ContactContainer = Styled.div`
   align-items: center;
   margin: 4rem 0;
 
-  @media only screen and (max-width: 44em) {
-    margin: 4rem 0;
-  }
-
   @media only screen and (max-width: 27em) {
     flex-direction: column;
+  }
+
+  @media only screen and (min-width: 160em) {
+    margin: 8rem 0;
   }
 `;
 
