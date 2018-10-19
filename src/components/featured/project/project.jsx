@@ -20,6 +20,10 @@ const Container = Styled.div`
     height: 15rem;
   }
 
+  @media only screen and (min-width: 95em) {
+    height: 85rem;
+  }
+
   @media only screen and (min-width: 120em) {
     height: 95rem;
   }
