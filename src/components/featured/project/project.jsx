@@ -40,15 +40,15 @@ const Title = Styled.p`
   padding-bottom: 1rem;
 
   @media only screen and (max-width: 62.5em) {
-    font-size: 2.7rem;
+    font-size: 3.4rem;
   }
 
   @media only screen and (max-width: 47em) {
-    font-size: 2.3rem;
+    font-size: 2.7rem;
   }
 
   @media only screen and (max-width: 27em) {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   @media only screen and (min-width: 120em) {
@@ -67,15 +67,15 @@ const Summary = Styled.p`
   color: #B3B6B7;
 
   @media only screen and (max-width: 62.5em) {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   @media only screen and (max-width: 47em) {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   @media only screen and (max-width: 27em) {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   @media only screen and (min-width: 120em) {
@@ -89,7 +89,7 @@ const Summary = Styled.p`
 
 const Details = Styled.div`
   width: 50rem;
-  height: 16rem;
+  height: 14rem;
   background-color: #011118;
   margin-bottom: 4rem;
 
@@ -122,36 +122,11 @@ const Details = Styled.div`
 const DetailsContainer = Styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 2rem 5rem;
 
   @media only screen and (max-width: 27em) {
     text-align: center;
-  }
-`;
-
-const Link = Styled.a`
-  font-size: 1.5rem; 
-  margin-bottom: 3.5rem;
-  color: #ECF0F1;
-
-  @media only screen and (max-width: 62.5em) {
-    font-size: 1.4rem;
-  }
-
-  @media only screen and (max-width: 47em) {
-    font-size: 1.2rem;
-  }
-
-  @media only screen and (max-width: 27em) {
-    font-size: 1rem;
-  }
-
-  @media only screen and (max-width: 120em) {
-    font-size: 1.9rem;
-  }
-
-  @media only screen and (min-width: 160em) {
-    font-size: 2.4rem;
   }
 `;
 
@@ -182,9 +157,6 @@ class Project extends React.Component {
           <DetailsContainer>
             <Title>{this.props.title}</Title>
             <Summary>{this.props.summary}</Summary>
-            <Link href={this.props.link} target={"_blank"}>
-              {this.props.link}
-            </Link>
           </DetailsContainer>
         </Details>
         <Video innerRef={this.videoRef} src={this.props.source} autoPlay loop>
@@ -198,7 +170,6 @@ class Project extends React.Component {
 Project.propTypes = {
   title: PropTypes.string.isRequired,
   summary: PropTypes.string.isRequired,
-  link: PropTypes.string.link,
   source: PropTypes.string.isRequired
 };
 
