@@ -1,7 +1,7 @@
 import React from "react";
 import Styled from "styled-components";
 
-const FooterContainer = Styled.div`
+const FooterContainer = Styled.footer`
   background-color: #839192;
   color: #F0F3F4;
   width: 100vw;

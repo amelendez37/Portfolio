@@ -5,10 +5,7 @@ import PropTypes from "prop-types";
 const Container = Styled.div`
   width: 100%;
   height: 68rem;
-  margin-left: 50%;
-  xmargin-bottom: 25rem;
   margin-bottom: 20%;
-  transform: translateX(-50%);
 
   @media only screen and (max-width: 64em) {
     height: 60rem;
@@ -19,7 +16,7 @@ const Container = Styled.div`
   }
 
   @media only screen and (max-width: 27em) {
-    height: 40rem;
+    height: 37rem;
   }
 
   @media only screen and (min-width: 95em) {
@@ -94,25 +91,33 @@ const DetailsContainer = Styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 2rem 5rem;
-  width: 47rem;
+  width: 25%;
   height: 14rem;
   background-color: #011118;
   margin-bottom: 4rem;
 
   @media only screen and (max-width: 62.5em) {
     height: 14rem;
-    width: 40rem;
+    width: 30%;
   }
 
   @media only screen and (max-width: 47em) {
     height: 12rem;
-    width: 32rem;
+    width: 35%;
   }
 
   @media only screen and (max-width: 27em) {
     height: 8rem;
-    width: 77%;
+    width: 76.5%;
     text-align: center;
+  }
+
+  @media only screen and (max-width: 23.5em) {
+    width: 73%;
+  }
+
+  @media only screen and (max-width: 20em) {
+    width: 68%;
   }
 
   @media only screen and (min-width: 120em) {
@@ -120,7 +125,6 @@ const DetailsContainer = Styled.div`
   }
 
   @media only screen and (min-width: 160em) {
-    width: 65rem;
     height: 26rem;
     margin: 8rem 0;
   }

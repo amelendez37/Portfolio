@@ -10,6 +10,7 @@ const Container = Styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   margin-bottom: 10rem;
+  width: 100vw;
 `;
 
 const Featured = () => {
