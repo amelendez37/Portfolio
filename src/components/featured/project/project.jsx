@@ -113,11 +113,11 @@ const DetailsContainer = Styled.div`
   }
 
   @media only screen and (max-width: 23.5em) {
-    width: 73%;
+    width: 73.5%;
   }
 
   @media only screen and (max-width: 20em) {
-    width: 68%;
+    width: 68.5%;
   }
 
   @media only screen and (min-width: 120em) {
